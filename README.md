@@ -28,7 +28,7 @@ GROUP BY d.continent, d.location
 - After that you should have a rolling number of vaccinations for both countries
 - Create another select statement but with MAX of the rolling number and divide it by the population and multiply by 100 to get a percentage
 <br>
-Answer: United States had 68.7% of the population administered the vaccine and Vietnam had 5.2% administered the vaccine by April 30th, 2021
+Answer: United States had 68.7% and Vietnam had 5.2% of the population administered the vaccine by April 30th, 2021
 <br>
 
 ![oU76ilT](https://user-images.githubusercontent.com/122754787/219989004-963478f6-51ab-4961-8c72-4f6b2afdb608.png)
