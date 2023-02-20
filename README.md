@@ -66,4 +66,4 @@ GROUP BY location
 ![HANDWASH](https://user-images.githubusercontent.com/122754787/220197244-41c896b8-7d6d-4861-b905-2d31991fb43b.png)
 
 - It is said by the CDC that washing your hands is the most effective way of preventing the spread of germs
-- Comparing the number of facilities it is evident that Vietnam put more effort of the transmission of germs by creating 85 handwashing facilities compared to the United States' of 0
+- Comparing the number of facilities it is evident that Vietnam put more effort in reducing the transmission of germs by creating 85 handwashing facilities compared to the United States' of 0
