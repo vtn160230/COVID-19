@@ -5,7 +5,7 @@ The dataset is from January 21, 2020 - April 30th, 2021
 
 Using SSMS on this project because I found it difficult to import the excel sheet over in pgAdmin due to the null values and column data types. I'll come back to it and figure out how to do that in pgAdmin eventually though!
 
-- Q1. What is the highest percentage of people in Vietnam and the United States that got vaccinated up until April 30th, 2021? 
+Q1. What is the highest percentage of people in Vietnam and the United States that got vaccinated up until April 30th, 2021? 
 
 ````sql
 with t1 as (
@@ -35,7 +35,7 @@ Answer: United States had 68.7% and Vietnam had 0.52% of the population administ
 
 ***
 
-- Q2. After answering the last question, I was curious as to why vaccination percentage in Vietnam was incredily low compared to the United States. United States had 68.7% and Vietnam had as little as 0.52% of the population administered the vaccine.
+Q2. After answering the last question, I was curious as to why vaccination percentage in Vietnam was incredily low compared to the United States. United States had 68.7% and Vietnam had as little as 0.52% of the population administered the vaccine.
 
 I began this answering this question by first analyzing how many total cases both country had compared to their population.
 <br>
