@@ -1,2 +1,29 @@
 # COVID-19
 Analyzing a data set of COVID-19 from the years of 2020-2021! Mainly analyzing the countries of the United States and Vietnam because those are the two that pertain to me most as a Vietnamese American.
+
+The dataset is from January 21, 2020 - April 30th, 2021
+
+Using SSMS on this project because I found it difficult to import the excel sheet over in pgAdmin due to the null values and column data types. I'll come back to it and figure out how to do that though!
+
+- Q1. What is the highest percentage of people in vietnam and the United States that got vaccinated up until April 30th, 2021? 
+
+````sql
+with t1 as (
+SELECT d.continent, d.location, d.date, d.population, v.new_vaccinations, SUM(CONVERT(int, v.new_vaccinations)) OVER (PARTITION BY d.location ORDER BY d.location, d.date) AS RollingPeopleVaccinated
+FROM [Portfolio Project]..CovidDeaths d
+JOIN [Portfolio Project]..CovidVaccinations v
+ON d.location = v.location 
+AND d.date = v.date
+WHERE d.location = 'Vietnam' OR d.location = 'United States')
+
+SELECT d.continent, d.location, MAX(RollingPeopleVaccinated/d.population)*100 AS highest_percent_vaccinated FROM PercentPopulationVaccinated p 
+JOIN [Portfolio Project]..CovidDeaths d
+ON d.location = p.location
+WHERE d.location = 'Vietnam' OR d.location = 'United States'
+GROUP BY d.continent, d.location
+````
+
+Here I am looking to create a rolling number of the vaccinations using a temp table, and from there use that same temp table to grab the max total of each countries vaccination and dividing it by the population to give the highest vaccination percentage up until the data shows.
+<br>
+![oU76ilT](https://user-images.githubusercontent.com/122754787/219989004-963478f6-51ab-4961-8c72-4f6b2afdb608.png)
+
