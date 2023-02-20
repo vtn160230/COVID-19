@@ -41,8 +41,13 @@ I began this answering this question by first analyzing how many total cases bot
 <br>
 
 ````sql
+with t1 as (
 SELECT location, population, MAX(total_cases) AS highest_amt_cases from CovidDeaths
 WHERE location = 'Vietnam' OR location = 'United States'
-GROUP BY location, population
-````
+GROUP BY location, population)
 
+SELECT location, (highest_amt_cases/population)*100 AS infection_percentage from t1
+````
+<br>
+
+![infectionperc](https://user-images.githubusercontent.com/122754787/219993273-7ee27bda-a4f3-4846-a5d9-a4763e5b1eb9.png)
