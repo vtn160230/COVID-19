@@ -35,7 +35,9 @@ Answer: United States had 68.7% and Vietnam had 0.52% of the population administ
 
 ***
 
-## Q2. After answering the last question, I was curious as to why vaccination percentage in Vietnam was incredily low compared to the United States. United States had  68.7% and Vietnam had as little as 0.52% of the population administered the vaccine.
+## Q2. Why is Vietnam's vaccination rate so low?
+
+After answering the last question, I was curious as to why vaccination percentage in Vietnam was incredily low compared to the United States. United States had  68.7% and Vietnam had as little as 0.52% of the population administered the vaccine.
 
 I began this answering this question by first analyzing how many total cases both country had compared to their population.
 <br>
