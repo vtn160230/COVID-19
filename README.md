@@ -5,7 +5,7 @@ The dataset is from January 21, 2020 - April 30th, 2021
 
 Using SSMS on this project because I found it difficult to import the excel sheet over in pgAdmin due to the null values and column data types. I'll come back to it and figure out how to do that in pgAdmin eventually though!
 
-- Q1. What is the highest percentage of people in vietnam and the United States that got vaccinated up until April 30th, 2021? 
+- Q1. What is the highest percentage of people in Vietnam and the United States that got vaccinated up until April 30th, 2021? 
 
 ````sql
 with t1 as (
