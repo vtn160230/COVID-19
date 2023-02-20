@@ -30,5 +30,6 @@ GROUP BY d.continent, d.location
 <br>
 Answer: United States had 68.7% of the population administered the vaccine and Vietnam had 5.2% administered the vaccine by April 30th, 2021
 <br>
+
 ![oU76ilT](https://user-images.githubusercontent.com/122754787/219989004-963478f6-51ab-4961-8c72-4f6b2afdb608.png)
 
