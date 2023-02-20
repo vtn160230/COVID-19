@@ -41,8 +41,18 @@ Answer: United States had 68.7% and Vietnam had 0.52% of the population administ
 
 After answering the last question, I was curious as to why vaccination percentage in Vietnam was incredily low compared to the United States. United States had  68.7% and Vietnam had as little as 0.52% of the population administered the vaccine.
 
-I began this answering this question by first analyzing how many total cases both country had compared to their population.
+I began this answering this question by looking into factors that could contribute in the reduction of COVID transmissions, and handwashing was one of them.
 <br>
+
+````sql
+SELECT location, MAX(handwashing_facilities) as num_of_handwash_facilities FROM CovidVaccinations 
+WHERE location = 'Vietnam' OR location = 'United States'
+GROUP BY location
+````
+<br>
+
+![HANDWASH](https://user-images.githubusercontent.com/122754787/220197244-41c896b8-7d6d-4861-b905-2d31991fb43b.png)
+
 
 ````sql
 with t1 as (
