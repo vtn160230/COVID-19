@@ -23,7 +23,12 @@ WHERE d.location = 'Vietnam' OR d.location = 'United States'
 GROUP BY d.continent, d.location
 ````
 
-Here I am looking to create a rolling number of the vaccinations using a temp table, and from there use that same temp table to grab the max total of each countries vaccination and dividing it by the population to give the highest vaccination percentage up until the data shows.
+- Here I am looking to create a rolling number of the vaccinations using a temp table, and from there use that same temp table to grab the max total of each countries vaccination and dividing it by the population to give the highest vaccination percentage up until the data shows.
+- Create temp table and request for continent, location, date, location, new vaccination along with a windows function that partitions by the location and order by the location and date
+- After that you should have a rolling number of vaccinations for both countries
+- Create another select statement but with MAX of the rolling number and divide it by the population and multiply by 100 to get a percentage
+<br>
+Answer: United States had 68.7% of the population administered the vaccine and Vietnam had 5.2% administered the vaccine by April 30th, 2021
 <br>
 ![oU76ilT](https://user-images.githubusercontent.com/122754787/219989004-963478f6-51ab-4961-8c72-4f6b2afdb608.png)
 
