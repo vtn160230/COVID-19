@@ -10,14 +10,14 @@ Using SSMS on this project because I found it difficult to import the excel shee
 ````sql
 with t1 as (
 SELECT d.continent, d.location, d.date, d.population, v.new_vaccinations, SUM(CONVERT(int, v.new_vaccinations)) OVER (PARTITION BY d.location ORDER BY d.location, d.date) AS RollingPeopleVaccinated
-FROM [Portfolio Project]..CovidDeaths d
-JOIN [Portfolio Project]..CovidVaccinations v
+FROM CovidDeaths d
+JOIN CovidVaccinations v
 ON d.location = v.location 
 AND d.date = v.date
 WHERE d.location = 'Vietnam' OR d.location = 'United States')
 
 SELECT d.continent, d.location, MAX(RollingPeopleVaccinated/d.population)*100 AS highest_percent_vaccinated FROM PercentPopulationVaccinated p 
-JOIN [Portfolio Project]..CovidDeaths d
+JOIN CovidDeaths d
 ON d.location = p.location
 WHERE d.location = 'Vietnam' OR d.location = 'United States'
 GROUP BY d.continent, d.location
