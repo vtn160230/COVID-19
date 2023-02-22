@@ -62,6 +62,10 @@ GROUP BY location
 ````
 <br>
 
+***
+
+## Q3: What could be a factor in the lower infection rate in Vietnam compared to the United States?
+
 ![HANDWASH](https://user-images.githubusercontent.com/122754787/220197244-41c896b8-7d6d-4861-b905-2d31991fb43b.png)
 
 - It is said by the CDC that washing your hands is the most effective way of preventing the spread of germs
@@ -69,7 +73,7 @@ GROUP BY location
 
 ***
 
-## Q3: Show the total death count for both countries of the United States and Vietnam
+## Q4: Show the total death count for both countries of the United States and Vietnam
 
 ````sql
 SELECT Location, MAX(cast(total_deaths as int)) as total_death_count
