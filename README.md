@@ -55,16 +55,16 @@ SELECT location, (highest_amt_cases/population)*100 AS infection_percentage from
 - After answering the last question, I was curious as to why vaccination percentage in Vietnam was incredily low compared to the United States. United States had  68.7% and Vietnam had as little as 0.52% of the population administered the vaccine
 <br
 
+
+***
+
+## Q3: What could be a factor in the lower infection rate in Vietnam compared to the United States?
+
 ````sql
 SELECT location, MAX(handwashing_facilities) as num_of_handwash_facilities FROM CovidVaccinations 
 WHERE location = 'Vietnam' OR location = 'United States'
 GROUP BY location
 ````
-<br>
-
-***
-
-## Q3: What could be a factor in the lower infection rate in Vietnam compared to the United States?
 
 ![HANDWASH](https://user-images.githubusercontent.com/122754787/220197244-41c896b8-7d6d-4861-b905-2d31991fb43b.png)
 
