@@ -78,7 +78,6 @@ GROUP BY location
 ````sql
 SELECT Location, MAX(cast(total_deaths as int)) as total_death_count
 FROM CovidDeaths
---WHERE location like '%states%'
 WHERE location = 'Vietnam' OR location = 'United States'
 GROUP BY Location
 ORDER BY total_death_count DESC
