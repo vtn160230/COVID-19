@@ -37,7 +37,7 @@ Answer: United States had 68.7% and Vietnam had 0.52% of the population administ
 
 ***
 
-## Q2. Why is Vietnam's vaccination rate so low?
+## Q2. What are the chances of dying from COVID in the United States and Vietnam respectively?
 
 
 ````sql
