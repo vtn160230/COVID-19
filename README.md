@@ -66,3 +66,19 @@ GROUP BY location
 
 - It is said by the CDC that washing your hands is the most effective way of preventing the spread of germs
 - Comparing the number of facilities it is evident that Vietnam put more effort in reducing the transmission of germs by creating 85 handwashing facilities compared to the United States' of 0
+
+***
+
+## Q3: Show the total death count for both countries of the United States and Vietnam
+
+````sql
+SELECT Location, MAX(cast(total_deaths as int)) as total_death_count
+FROM CovidDeaths
+--WHERE location like '%states%'
+WHERE location = 'Vietnam' OR location = 'United States'
+GROUP BY Location
+ORDER BY total_death_count DESC
+````
+
+![deathcount](https://user-images.githubusercontent.com/122754787/220718851-3dcd7511-7d49-4bce-b201-33ea99508705.png)
+
