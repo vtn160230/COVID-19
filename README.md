@@ -53,7 +53,7 @@ SELECT location, (highest_amt_cases/population)*100 AS infection_percentage from
 ![infectionperc](https://user-images.githubusercontent.com/122754787/219993273-7ee27bda-a4f3-4846-a5d9-a4763e5b1eb9.png)
 
 - After answering the last question, I was curious as to why vaccination percentage in Vietnam was incredily low compared to the United States. United States had  68.7% and Vietnam had as little as 0.52% of the population administered the vaccine
-<br
+<br>
 
 
 ***
