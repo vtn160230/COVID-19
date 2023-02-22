@@ -1,4 +1,4 @@
-# COVID-19
+# COVID-19 United States and Vietnam
 Analyzing a data set of COVID-19 from the years of 2020-2021! Mainly analyzing the countries of the United States and Vietnam because those are the two that pertain to me the most as a Vietnamese American.
 
 The dataset is from (January 21, 2020 - April 30th, 2021)
