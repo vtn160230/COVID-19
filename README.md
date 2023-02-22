@@ -73,15 +73,14 @@ GROUP BY location
 
 ***
 
-## Q4: Show the total death count for both countries of the United States and Vietnam
+## Q4: Show the total death count and the chances of dying from COVID for both countries of the United States and Vietnam 
 
 ````sql
-SELECT Location, MAX(cast(total_deaths as int)) as total_death_count
+SELECT location, SUM(new_cases) AS total_cases, SUM(cast(new_deaths as int)) AS total_deaths, SUM(cast(new_deaths as int))/SUM(new_cases)*100 AS death_percentage
 FROM CovidDeaths
 WHERE location = 'Vietnam' OR location = 'United States'
-GROUP BY Location
-ORDER BY total_death_count DESC
+GROUP BY location
 ````
 
-![deathcount](https://user-images.githubusercontent.com/122754787/220718851-3dcd7511-7d49-4bce-b201-33ea99508705.png)
+![deathcount](https://user-images.githubusercontent.com/122754787/220729237-31fd3c66-1237-41d2-9b27-110ed65df478.png)
 
